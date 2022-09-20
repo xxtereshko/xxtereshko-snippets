@@ -2,6 +2,7 @@
   "name": "xxtereshko-snippets",
   "displayName": "@xxtereshko-snippets",
   "description": "xxtereshko snippets",
+  "publisher": "xxtereshko",
   "version": "0.0.1",
   "repository": {
     "type": "git",
