@@ -3,6 +3,7 @@
   "displayName": "@xxtereshko/snippets",
   "description": "xxtereshko snippets",
   "publisher": "xxtereshko",
+  "icon": "images/cover.png",
   "version": "0.0.3",
   "repository": {
     "type": "git",
