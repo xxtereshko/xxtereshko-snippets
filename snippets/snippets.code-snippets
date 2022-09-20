@@ -1,0 +1,93 @@
+{
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log('${1} =>', ${1})"]
+  },
+  "typescriptReactArrowFunctionComponent": {
+    "prefix": "rf",
+    "body": [
+      "type Props = {}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: Props) => {",
+      "  return (",
+      "    ${0}",
+      "  )",
+      "}"
+    ]
+  },
+  "typescriptReactArrowFunctionExportComponent": {
+    "prefix": "rfe",
+    "body": [
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: Props) => {",
+      "  return (",
+      "    ${0}",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ]
+  },
+  "useState": {
+    "prefix": "us",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState(${2})"]
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "  ${0}", "}, [${1}])"]
+  },
+  "useEffectReturn": {
+    "prefix": "uer",
+    "body": [
+      "useEffect(() => {",
+      "  ${2}",
+      "",
+      "  return () => {",
+      "    ${3}",
+      "  }",
+      "}, [${1}])"
+    ]
+  },
+  "useLayoutEffect": {
+    "prefix": "ule",
+    "body": ["useLayoutEffect(() => {", "  ${2}", "}, [${1}])"]
+  },
+  "useLayoutEffectReturn": {
+    "prefix": "uler",
+    "body": [
+      "useLayoutEffect(() => {",
+      "  ${2}",
+      "",
+      "  return () => {",
+      "    ${3}",
+      "  };",
+      "}, [${1}])"
+    ]
+  },
+  "method": {
+    "prefix": "ha",
+    "body": ["const ${1} = (${2}) => {", "  ${0}", "}"],
+    "description": "Creates a method inside a class"
+  },
+  "destructingObject": {
+    "prefix": "dob",
+    "body": ["const {${2:second}} = ${1:first}"],
+    "description": "Creates and assigns a local variable using object destructing"
+  },
+  "destructingArray": {
+    "prefix": "dar",
+    "body": ["const [${2:second}] = ${1:first}"],
+    "description": "Creates and assigns a local variable using array destructing"
+  },
+  "setInterval": {
+    "prefix": "sti",
+    "body": ["setInterval(() => { ", "  ${2}", "}, ${1})"],
+    "description": "Executes the given function at specified intervals"
+  },
+  "setTimeOut": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => { ", "  ${2}", "}, ${1})"],
+    "description": "Executes the given function after the specified delay"
+  }
+}
