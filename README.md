@@ -1,3 +1,3 @@
-# xxtereshko-snippets README
+# xxtereshko-keymap README
 
-enjoy!
+**Enjoy!**
