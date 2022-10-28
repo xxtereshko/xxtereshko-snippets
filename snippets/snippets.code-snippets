@@ -67,8 +67,8 @@
   },
   "method": {
     "prefix": "ha",
-    "body": ["const ${1} = (${2}) => {", "  ${0}", "}"],
-    "description": "Creates a method inside a class"
+    "body": ["const ${1} = (${2}: ${3}) => {", "  ${0}", "}"],
+    "description": "Creates a handler method"
   },
   "destructingObject": {
     "prefix": "dob",
