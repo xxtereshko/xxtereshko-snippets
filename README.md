@@ -110,4 +110,27 @@ setTimeout(() => {
 }, $1)
 ```
 
+
+`stb`
+
+```tsx
+import { ComponentMeta, ComponentStory } from '@storybook/react-native'
+
+const Meta: ComponentMeta<typeof ${1}> = {
+  title: '2;1',
+  component: ${}
+  args: {},
+}
+
+export default Meta
+
+type T${1:}Story = ComponentStory<typeof ${1:}>
+
+export const Default: T${1:}Story = args => <${1:} {...args} />
+}
+
+
+
+```
+
 Enjoy! ❤️

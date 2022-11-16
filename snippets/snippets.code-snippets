@@ -89,5 +89,26 @@
     "prefix": "sto",
     "body": ["setTimeout(() => { ", "  ${2}", "}, ${1})"],
     "description": "Executes the given function after the specified delay"
+  },
+  "RN StoryBook": {
+    "prefix": "stb",
+    "body": [
+      "import { ComponentMeta, ComponentStory } from '@storybook/react-native'",
+      "",
+      "const Meta: ComponentMeta<typeof ${1:}> = {",
+      "  title: '${2:}/${1:}',",
+      "  component: ${1:},",
+      "  args: {",
+      "    ",
+      "  },",
+      "}",
+      "",
+      "export default Meta",
+      "",
+      "type T${1:}Story = ComponentStory<typeof ${1:}>",
+      "",
+      "export const Default: T${1:}Story = args => <${1:} {...args} />"
+    ],
+    "description": "Creates a storybook story"
   }
 }
