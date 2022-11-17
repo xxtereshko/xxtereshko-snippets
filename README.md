@@ -9,9 +9,9 @@ console.log("$1 =>", $1)
 `rf`
 
 ```tsx
-type Props = {}
+type T$1Props = {}
 
-export const $1 = ({}: Props) => {
+export const $1 = ({}: T$1Props) => {
   return $0
 }
 ```
@@ -19,9 +19,9 @@ export const $1 = ({}: Props) => {
 `rfe`
 
 ```tsx
-type Props = {}
+type T$1Props = {}
 
-const $1 = ({}: Props) => {
+const $1 = ({}: T$1Props) => {
   return $0
 }
 
@@ -109,7 +109,6 @@ setTimeout(() => {
   $2
 }, $1)
 ```
-
 
 `stb`
 
