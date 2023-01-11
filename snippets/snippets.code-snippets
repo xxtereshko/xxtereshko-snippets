@@ -6,9 +6,11 @@
   "typescriptReactArrowFunctionComponent": {
     "prefix": "rf",
     "body": [
-      "type T${1:${TM_FILENAME_BASE}}Props = {}",
+      "import React from 'react'",
       "",
-      "export const ${1:${TM_FILENAME_BASE}} = ({}: T${1:${TM_FILENAME_BASE}}Props) => {",
+      "type Props = {}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}} = ({}: Props) => {",
       "  return (",
       "    ${0}",
       "  )",
@@ -18,9 +20,11 @@
   "typescriptReactArrowFunctionExportComponent": {
     "prefix": "rfe",
     "body": [
-      "type T${1:${TM_FILENAME_BASE}}Props = {}",
+      "import React from 'react'",
       "",
-      "const ${1:${TM_FILENAME_BASE}} = ({}: T${1:${TM_FILENAME_BASE}}Props) => {",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = ({}: Props) => {",
       "  return (",
       "    ${0}",
       "  )",
